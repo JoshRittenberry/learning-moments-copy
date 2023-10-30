@@ -7,6 +7,19 @@ import { AllPosts } from "./components/posts/all_posts/AllPosts"
 import { useEffect } from "react"
 
 export const App = () => {
+  useEffect(() => {
+    function handleUnload() {
+      localStorage.removeItem('learning_user');
+    }
+
+    window.addEventListener("beforeunload", handleUnload);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener("beforeunload", handleUnload);
+    };
+  }, []);
+
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
