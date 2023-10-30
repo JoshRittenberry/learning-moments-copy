@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/laerning-moments-copy/static/css/main.0bb3d336.css",
+    "main.js": "/laerning-moments-copy/static/js/main.8b99bbe3.js",
+    "index.html": "/laerning-moments-copy/index.html",
+    "main.0bb3d336.css.map": "/laerning-moments-copy/static/css/main.0bb3d336.css.map",
+    "main.8b99bbe3.js.map": "/laerning-moments-copy/static/js/main.8b99bbe3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0bb3d336.css",
+    "static/js/main.8b99bbe3.js"
+  ]
+}
