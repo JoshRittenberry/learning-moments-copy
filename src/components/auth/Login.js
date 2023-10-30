@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 // import "./Login.css"
@@ -7,6 +7,10 @@ import { getUserByEmail } from "../../services/userService"
 export const Login = () => {
   const [email, set] = useState("joshr@gmail.com")
   const navigate = useNavigate()
+
+  useEffect(() => {
+    localStorage.removeItem("learning_user")
+  }, [])
 
   const handleLogin = (e) => {
     e.preventDefault()

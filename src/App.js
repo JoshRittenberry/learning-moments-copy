@@ -4,6 +4,7 @@ import { Register } from "./components/auth/Register"
 import { ApplicationViews } from "./views/ApplicationViews"
 import { Authorized } from "./views/Authorized"
 import { AllPosts } from "./components/posts/all_posts/AllPosts"
+import { useEffect } from "react"
 
 export const App = () => {
   return (
