@@ -1,0 +1,62 @@
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    /* Add some space around the container */
+}
+
+.profile-info {
+    flex: 1;
+    max-width: 400px;
+    /* Example value to ensure the profile doesn't grow too wide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-picture img {
+    width: 150px;
+    /* Set a suitable width for the profile image */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.edit-profile-btn {
+    background-color: #FFC107;
+    /* Adjust to your brand color */
+    color: #FFFFFF;
+    /* Adjust to contrast the button color */
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile-btn:hover {
+    background-color: #385F7C;
+    /* Darkened version of the button color for hover effect */
+}
+
+.profile-posts {
+    /* Allows the posts to take up more space than the profile info */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

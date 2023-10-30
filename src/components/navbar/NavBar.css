@@ -1,0 +1,48 @@
+/* Base styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Equal spacing between each item */
+    align-items: center;
+    background-color: #517FA4;
+    /* Instagram blue */
+    padding: 1rem 2rem;
+    /* Padding on top/bottom and left/right */
+    list-style-type: none;
+    /* Removes bullet points */
+    margin: 0;
+    /* Remove default margin */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+}
+
+/* Base styling for each navbar item */
+.navbar-item {
+    margin: 0 1rem;
+    /* Spacing between each item */
+}
+
+/* Styling for the links */
+.navbar-item a {
+    text-decoration: none;
+    /* Removes the default underline */
+    color: #FFFFFF;
+    /* White text color for contrast */
+    font-family: 'Arial', sans-serif;
+    /* Using Arial as the font, but this can be changed */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    /* Padding for clickable area and visual appeal */
+    border-radius: 8px;
+    /* Slight rounding of corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the links */
+.navbar-item a:hover {
+    background-color: #385F7C;
+    /* A slightly darker shade for hover */
+    color: #FED330;
+    /* Instagram gold/yellow for a fun pop of color */
+}

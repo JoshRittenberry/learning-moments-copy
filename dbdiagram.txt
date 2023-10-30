@@ -1,0 +1,51 @@
+table users {
+  id int
+  firstName varchar
+  lastName varchar
+  email varchar
+  cohort int
+}
+
+table postLikes {
+  id int
+  userId int
+  postId int
+}
+
+table commentLikes {
+  id int
+  userId int
+  postId int
+}
+
+table posts {
+  id int
+  userId int 
+  topicId int
+  title varchar
+  body varchar
+  date date
+}
+
+table topics {
+  id int
+  name varchar
+}
+
+table comments {
+  id int
+  userId int
+  postId int
+  body varchar
+  date date
+}
+
+Ref: "users"."id" < "postLikes"."userId"
+Ref: "posts"."id" < "postLikes"."postId"
+Ref: "topics"."id" < "posts"."topicId"
+Ref: "users"."id" < "posts"."userId"
+Ref: "users"."id" < "comments"."userId"
+Ref: "posts"."id" < "comments"."postId"
+Ref: "comments"."id" < "commentLikes"."id"
+Ref: "users"."id" < "commentLikes"."userId"
+Ref: "posts"."id" < "commentLikes"."postId"

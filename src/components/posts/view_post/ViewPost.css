@@ -1,0 +1,123 @@
+.view-post-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.post-main {
+    display: flex;
+    gap: 2rem;
+}
+
+.post-creator-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.creator-profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-body-container {
+    flex: 3;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.post-comments-container {
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.comment-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.comment-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.comment-like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-regular,
+.fa-solid {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.post-edit-btn,
+.post-comment-btn,
+.post-return-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFC107;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-edit-btn:hover,
+.post-comment-btn:hover,
+.post-return-btn:hover {
+    background-color: #385F7C;
+}
+
+.pst-like-btn,
+.comment-like-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFC107;
+    transition: color 0.3s ease;
+}
+
+.pst-like-btn:hover,
+.comment-like-btn:hover {
+    color: #385F7C;
+}
