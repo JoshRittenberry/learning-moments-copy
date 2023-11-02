@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/learning-moments-copy/static/css/main.0bb3d336.css",
-    "main.js": "/learning-moments-copy/static/js/main.cd312076.js",
+    "main.js": "/learning-moments-copy/static/js/main.3b2d9073.js",
     "index.html": "/learning-moments-copy/index.html",
     "main.0bb3d336.css.map": "/learning-moments-copy/static/css/main.0bb3d336.css.map",
-    "main.cd312076.js.map": "/learning-moments-copy/static/js/main.cd312076.js.map"
+    "main.3b2d9073.js.map": "/learning-moments-copy/static/js/main.3b2d9073.js.map"
   },
   "entrypoints": [
     "static/css/main.0bb3d336.css",
-    "static/js/main.cd312076.js"
+    "static/js/main.3b2d9073.js"
   ]
 }
