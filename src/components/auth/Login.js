@@ -24,7 +24,7 @@ export const Login = () => {
             id: user.id,
           })
         )
-
+        window.alert("I Promise the webpage is loading, but it takes about a minute since I'm utilizing render.com to host my API for free :)")
         navigate("/")
       } else {
         window.alert("Invalid login")
