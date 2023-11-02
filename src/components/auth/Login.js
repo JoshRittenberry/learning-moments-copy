@@ -24,7 +24,6 @@ export const Login = () => {
             id: user.id,
           })
         )
-        window.alert("I Promise the webpage is loading, but it takes about a minute since I'm utilizing render.com to host my API for free :)")
         navigate("/")
       } else {
         window.alert("Invalid login")
@@ -53,7 +52,9 @@ export const Login = () => {
           </fieldset>
           <fieldset className="auth-fieldset">
             <div>
-              <button type="submit">Sign in</button>
+              <button type="submit" onClick={() => {
+                window.alert("I Promise the webpage is loading, but it takes about a minute since I'm utilizing render.com to host my API for free :)")
+              }}>Sign in</button>
             </div>
           </fieldset>
         </form>
